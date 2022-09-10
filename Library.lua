@@ -1145,7 +1145,7 @@ function UILibrary.Main(PrjName,HideKey)
 					SelectableText.Position = UDim2.new(0.0799999982, 0, 0, 0)
 					SelectableText.Size = UDim2.new(0.920000017, 0, 1, 0)
 					SelectableText.Font = Enum.Font.SourceSansSemibold
-					SelectableText.Text = "    " .. Text
+					SelectableText.Text = "    " ..Text
 					SelectableText.TextColor3 = Color3.fromRGB(255, 255, 255)
 					SelectableText.TextSize = 18.000
 					SelectableText.TextWrapped = true
@@ -1249,7 +1249,7 @@ function UILibrary.Main(PrjName,HideKey)
 
 				for _,str in next,Selectables do
 					
-						NewSelectable(tostring(_),str)
+						NewSelectable(tostring(str),str)
 				end
 
 				function Drop.Refresh(TableToRefresh)
@@ -1260,7 +1260,7 @@ function UILibrary.Main(PrjName,HideKey)
 						end
 					end
 				
-						NewSelectable(tostring(_),str)
+						NewSelectable(tostring(str),str)
 
 				end
 				return Drop;
