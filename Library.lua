@@ -1248,11 +1248,8 @@ function UILibrary.Main(PrjName,HideKey)
 				end
 
 				for _,str in next,Selectables do
-					if not IsMulti then
+					
 						NewSelectable(tostring(_),str)
-					else
-						NewSelectable(tostring(_))
-					end
 				end
 
 				function Drop.Refresh(TableToRefresh)
@@ -1262,11 +1259,9 @@ function UILibrary.Main(PrjName,HideKey)
 							v:Destroy()
 						end
 					end
-					if not IsMulti then
+				
 						NewSelectable(tostring(_),str)
-					else
-						NewSelectable(tostring(_))
-					end
+
 				end
 				return Drop;
 			end
